@@ -1,0 +1,45 @@
+.menu{
+    position: fixed;
+    z-index: 5;
+    height: 0vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: #000000;
+    transition: all 0.5s ease-out;
+    nav{
+        position: relative;
+        z-index: 5;
+        .left{
+            .logo{
+                img{
+                    height: 5vh;
+                }
+            }
+        }
+    }
+    .menu_content{
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        z-index: 1;
+        cursor: pointer;
+        margin-top: -18vh;
+        .menu_item{
+            height: 100%;
+            flex-basis: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-size: cover;
+            background-position: center;
+            .main_char{
+                font-size: 4rem;
+            }
+        }
+    }
+}
+.menu_active{
+    height: 100vh;
+}

@@ -1,0 +1,95 @@
+.slide_5{
+    position: relative;
+    display: flex;
+    .cta_section{
+        height: 100%;
+        flex-basis: 70vw;
+        position: relative;
+        padding: 25vh 0px 0px 20vh;
+        box-sizing: border-box;
+        h1{
+            font-size: 4rem;
+            font-weight: 300;
+            width: 70vh;
+        }
+        button{
+            height: 10vh;
+            width: auto;
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin: 0vh 0px 0px 35vh;
+        }
+        .cta_background{
+            position: absolute;
+            height: 35vh;
+            width: 55vh;
+            margin: -25vh 0px 0px 30vh;
+            opacity: 0.5;
+            z-index: -1;
+            background-image: url(../../assets/Together.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+    footer{
+        height: 100%;
+        flex-basis: 30vw;
+        background-color: black;
+        .logo{
+            height: 40vh;
+            width: 100%;
+            box-sizing: border-box;
+            padding-top: 20vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                height: 50%;
+            }
+        }
+        .footer_text{
+            height: 60%;
+            display: grid;
+            display: flex;
+            flex-direction: column;
+            margin: 15vh 4vw 0px 4vw;
+            box-sizing: border-box;
+            .row{
+                position: relative;
+                margin-top: 10vh;
+                display: flex;
+                .value{
+                    font-size: .75rem;
+                    color: cornsilk;
+                    position: absolute;
+                    top: 50%;
+                    transform: translate(0px,-50%);
+                    margin-left: 7vw;
+                }
+            }
+            .row_l{
+                position: relative;
+                display: flex;
+                margin-top: 10vh;
+                .value{
+                    font-size: .75rem;
+                    color: cornsilk;
+                    position: absolute;
+                    top: 50%;
+                    transform: translate(0px,-50%);
+                    margin-left: 7vw;
+                    ul{
+                        list-style-type: none;
+                        li{
+                            margin-top: .75rem;
+                        }
+                        li:first-child{
+                            margin-top: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

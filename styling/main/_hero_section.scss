@@ -1,0 +1,45 @@
+header{
+    height: 90vh;
+    margin-left: 40vh;
+    .h_1_lines{
+        margin: 17vh 0px 0px 0vh;
+        .line{
+            a{
+                text-decoration: none;
+                font-weight: 300;
+            }
+            a:hover{
+                font-style: italic;
+            }
+        }
+        .line:nth-child(1){
+            font-size: 7rem;
+        }
+        .line:nth-child(2){
+            margin: -1.5rem 0px -1.5rem 0px;
+            font-size: 7rem;
+        } 
+        .line:nth-child(3){
+            font-size: 7rem;
+        }  
+    }
+    p{
+        margin: 1vh 0vh 0vh 0vh;
+        width: 30vw;
+        color: #9C9C9C;
+        font-weight: 300;
+    }
+    button{
+        margin: 3vh 0vh 0vh 0vh;
+        height: 6.5vh;
+        width: 18vh;
+        font-size: .9rem;
+        border: 1px solid white;
+        color: white;
+        transition: all 0.25s;
+    }
+    button:hover{
+        background-color: #ffffff;
+        color: #161616;
+    }
+}

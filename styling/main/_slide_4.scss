@@ -1,0 +1,51 @@
+.slide_4{
+    .quote{
+        height: 100%;
+        width: 100vw;
+        background-color: black;
+        padding: 15vh 5vw 0px 5vw;
+        box-sizing: border-box;
+        h1{
+            font-size: 8.5rem;
+            font-weight: 300;
+            color: rgb(66, 66, 66);
+        }
+        .quote_desc{
+            margin: 0px 0px 0px 20vh;
+            font-size: .9rem;
+            color: rgba(255, 228, 196, 0.9);
+            width: 50vh;
+        }
+        .para_group{
+            margin: 20vh 0px 0px 20vh;
+            display: flex;
+            .para{
+                margin-left: 5vh;
+                .number{
+                    position: absolute;
+                    z-index: 1;
+                    font-size: 5rem;
+                    color: rgba(41, 41, 41, 0.5);
+                    transform: translate(-10%,-10%);
+                }
+                .para_desc_container{
+                    position: relative;
+                    z-index: 5;
+                    margin: 2.2rem;
+                    .para_head{
+                        font-size: 2rem;
+                        font-weight: 300;
+                    }
+                    .para_desc{
+                        font-size: 0.8rem;
+                        font-weight: 300;
+                        color: rgb(165, 165, 165);
+                    }
+                }
+            }
+            .para:first-child{
+                margin-left: 0vh;
+            }
+        }
+    }
+}

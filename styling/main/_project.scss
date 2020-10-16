@@ -1,0 +1,113 @@
+.projects{
+    display: flex;
+    .project{
+        margin: -20vh 0px 0px 35vw;
+        position: relative;
+        height: 65vh;
+        width: 60vw;
+        .number{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            font-size: 11rem;
+            font-weight: 300;
+            color: rgb(255, 255, 255);
+            z-index: 5;
+            transition: all 0.5s;
+        }
+        .main_project_image{
+            position: absolute;
+            height: auto;
+            width: 45vw;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            z-index: 1;
+
+            transition: all 0.5s ease-in-out;
+            //transition-delay: 0.25s;
+        }
+        .project_desc{
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            z-index: 5;
+            height: 45vh;
+            width: 30vh;
+            padding: 4vh 0px 0px 6vh;
+            transition: all 0.5s;
+            h1{
+                margin: -2vh 0px 3vh -2vh;
+                font-size: 5rem;
+                font-weight: 300;
+                transition: all 0.5s;
+            }
+            ul{
+                list-style-type: none;
+                font-weight: 200;
+                margin-left: 5vh;
+                li{
+                    font-size: 1rem;
+                    transition: all 0.5s;
+                }
+            }
+        }
+    }
+    .project:hover{
+        .number{
+            transform: scale(1.1);
+        }
+        .main_project_image{
+            transform: translate(-50%,-50%) scale(1.05);
+        }
+        .project_desc{
+            transform: scale(1.1);
+            font-weight: 500;
+        }
+    }
+}
+
+
+/*
+    .number{
+        //font-family: montserrat;
+        font-size: 11rem;
+        margin: -10vh 0px 0px -10vh;
+        font-weight: 400;
+        color: rgb(255, 255, 255);
+    }
+    .main_project_image{
+        //background-color: rgb(0, 0, 0);
+        margin: -20vh 0px 0px 0px;
+        height: 100%;
+        width: 100%;
+        #main_project_image_img{
+            position: relative;
+            z-index: 10;
+            height: auto;
+            width: 100%;
+            pointer-events: none;
+            user-select: none;
+            //margin: -100% 0px 0px -150%;
+        }
+    }
+    .project_desc{
+        z-index: 5;
+        height: 45vh;
+        width: 30vh;
+        padding: 4vh 0px 0px 6vh;
+        h1{
+            margin: -2vh 0px 3vh -2vh;
+            font-size: 5rem;
+            font-weight: 300;
+        }
+        ul{
+            list-style-type: none;
+            font-weight: 200;
+            margin-left: 5vh;
+            li{
+                font-size: 1rem;
+            }
+        }
+    }
+*/

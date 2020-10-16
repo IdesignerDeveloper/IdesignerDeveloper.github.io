@@ -1,0 +1,80 @@
+
+@media screen and (max-width: 2160px) and (orientation: portrait){
+    html{
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 1440px) and (orientation: portrait){
+    html{
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 1080px) and (orientation: portrait){
+    html{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (orientation: portrait){
+    html{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 800px) and (orientation: portrait){
+    html{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 720px) and (orientation: portrait){
+    html{
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 650px) and (orientation: portrait){
+    html{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) and (orientation: portrait){
+    html{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 360px) and (orientation: portrait){
+    html{
+        font-size: 12px;
+    }
+}
+
+//.........................Desktop Responsive....................
+
+//.........................For 1080p displays....................
+
+@media screen and (min-width: 1920px) and (max-width: 2559px){
+    html{
+        font-size: 24px;
+    }
+}
+
+//.........................For 2560p displays....................
+
+@media screen and (min-width: 2560px) and (max-width: 3840px){
+    html{
+        font-size: 32px;
+    }
+}
+
+//.........................For 3840p or 4k displays....................
+
+@media screen and (min-width: 3840px){
+    html{
+        font-size: 48px;
+    }
+}

@@ -1,0 +1,19 @@
+.slide_2{
+    .works_container{
+        height: 45vh;
+        width: 20vw;
+        background-color: black;
+        .w_c{
+            h3{
+                padding: 15vh 0px 0px 8vh;
+                font-weight: 300;
+                span:nth-child(1){
+                    font-size: 1.3rem;
+                }
+                span:nth-child(2){
+                    font-size: 4.5rem;
+                }
+            }
+        }
+    }
+}

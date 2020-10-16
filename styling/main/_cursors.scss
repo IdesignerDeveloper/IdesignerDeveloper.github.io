@@ -1,0 +1,62 @@
+.cursor{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 3rem;
+    width: 3rem;
+    background-color: rgb(199, 199, 199);
+    margin: -1.5rem 0px 0px -1.5rem;
+    border-radius: 500%;
+    z-index: 2000;
+    user-select: none;
+    pointer-events: none;
+    transition: all .3s ease-out;
+    mix-blend-mode: difference;
+}
+.cursor_on_project{
+    background-image: url(../../assets/project_cursor.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    mix-blend-mode: normal;
+    background-color: rgba(255, 255, 255, 0.80);
+    transition: all 0.1s;
+    transform: scale(2.5);
+}
+.cursor_on_design{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 40vh;
+    width: 50vh;
+    //background-color: rgb(255, 255, 255);
+    margin: -20vh 0px 0px -25vh;
+    z-index: -10;
+    user-select: none;
+    pointer-events: none;
+    transition: all 500ms ease-out;
+    transform: scale(0);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cursor_on_design:nth-child(2){
+    transition: all 510ms ease-out;
+    //background-color: rgba(199, 199, 199, 0.75);
+    opacity: 0.8;
+}
+.cursor_on_design:nth-child(3){
+    transition: all 520ms ease-out;
+    //background-color: rgba(199, 199, 199, 0.5);
+    opacity: 0.6;
+}
+
+
+@media screen and (orientation:portrait){
+    .cursor{
+        display: none;
+    }
+    .cursor_on_design{
+        display: none;
+    }
+}

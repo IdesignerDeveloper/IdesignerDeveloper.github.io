@@ -1,0 +1,76 @@
+.slide_3{
+    .design_section{
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        .works_container{
+            position: relative;
+            z-index: 5;
+            height: 45vh;
+            width: 20vw;
+            background-color: black;
+            .w_c{
+                h3{
+                    padding: 15vh 0px 0px 8vh;
+                    font-weight: 300;
+                    span:nth-child(1){
+                        font-size: 1.3rem;
+                    }
+                    span:nth-child(2){
+                        font-size: 4.5rem;
+                    }
+                }
+            }
+        }
+        .designs{
+            margin-right: 10vh;
+            height: 100%;
+            width: 90vw;
+            top: 00vh;
+            z-index: 10;
+            position: absolute;
+            right: 0px;
+            display: grid;
+            grid-template-rows: auto auto;
+            grid-template-columns: 30vw 30vw 30vw;
+            .design{
+                position: relative;
+                z-index: 15;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                //user-select: none;
+                //pointer-events: none;
+                .main_char{
+                    font-size: 4rem;
+                }
+                .background_ring{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    //transform: translate(-50%,-50%);
+                    height: 20vh;
+                    width: 20vh;
+                    margin: -10vh 0px 0px -10vh;
+                    filter: invert(100%);
+                    opacity: 0.35;
+                    animation: rotate 10s linear infinite;
+                    transform-origin: center;
+                }
+                @keyframes rotate {
+                    0%{
+                        transform: rotate(0deg);
+                    }
+                    100%{
+                        transform: rotate(360deg);
+                    }
+                }
+                p{
+                    font-size: .75rem;
+                    opacity: 0.35;
+                }
+            }
+        }
+    }
+}

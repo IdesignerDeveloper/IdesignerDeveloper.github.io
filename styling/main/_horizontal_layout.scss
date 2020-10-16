@@ -1,0 +1,33 @@
+.outer-wrapper {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    margin-top: -18vh;
+    //background-color: aqua;
+    scroll-behavior: smooth;
+    transition: all 0.5s;
+}
+.outer-wrapper::-webkit-scrollbar{
+    display: none;
+}
+.wrapper {
+    display: flex;
+    width: 600vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+.slide {
+    width: 100vw;
+    height: 100vh;
+    transition: trasform 0.5s ease-out;
+}
+.slide_2{
+    width: 200vw;
+}
+.skew{
+    transform: skewX(10deg);
+}
