@@ -34,21 +34,32 @@
     z-index: -10;
     user-select: none;
     pointer-events: none;
-    transition: all 500ms ease-out;
     transform: scale(0);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    opacity: 0.6;
+    transition: all 500ms ease-out;
 }
 .cursor_on_design:nth-child(2){
-    transition: all 510ms ease-out;
+    transition: all 800ms ease-out;
     //background-color: rgba(199, 199, 199, 0.75);
-    opacity: 0.8;
+    opacity: 0.5;
 }
 .cursor_on_design:nth-child(3){
-    transition: all 520ms ease-out;
+    transition: all 1000ms ease-out;
     //background-color: rgba(199, 199, 199, 0.5);
-    opacity: 0.6;
+    opacity: 0.4;
+}
+.cursor_on_design:nth-child(4){
+    transition: all 1200ms ease-out;
+    //background-color: rgba(199, 199, 199, 0.5);
+    opacity: 0.3;
+}
+.cursor_on_design:nth-child(5){
+    transition: all 1500ms ease-out;
+    //background-color: rgba(199, 199, 199, 0.5);
+    opacity: 0.2;
 }
 
 

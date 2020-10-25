@@ -139,25 +139,38 @@
       -ms-user-select: none;
           user-select: none;
   pointer-events: none;
-  -webkit-transition: all 500ms ease-out;
-  transition: all 500ms ease-out;
   -webkit-transform: scale(0);
           transform: scale(0);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  opacity: 0.6;
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
 }
 
 .cursor_on_design:nth-child(2) {
-  -webkit-transition: all 510ms ease-out;
-  transition: all 510ms ease-out;
-  opacity: 0.8;
+  -webkit-transition: all 800ms ease-out;
+  transition: all 800ms ease-out;
+  opacity: 0.5;
 }
 
 .cursor_on_design:nth-child(3) {
-  -webkit-transition: all 520ms ease-out;
-  transition: all 520ms ease-out;
-  opacity: 0.6;
+  -webkit-transition: all 1000ms ease-out;
+  transition: all 1000ms ease-out;
+  opacity: 0.4;
+}
+
+.cursor_on_design:nth-child(4) {
+  -webkit-transition: all 1200ms ease-out;
+  transition: all 1200ms ease-out;
+  opacity: 0.3;
+}
+
+.cursor_on_design:nth-child(5) {
+  -webkit-transition: all 1500ms ease-out;
+  transition: all 1500ms ease-out;
+  opacity: 0.2;
 }
 
 @media screen and (orientation: portrait) {
