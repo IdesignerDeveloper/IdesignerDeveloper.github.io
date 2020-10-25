@@ -11,15 +11,39 @@
     <script>
         var remove_loader = function(){
             document.getElementsByClassName("loader")[0].style.height = "0px";
+            document.getElementsByClassName("loading_image")[0].style.height = "0px";
+            document.getElementsByClassName("text_loading")[0].style.height = "0px";
         }
     </script>
+    <div class="mobile_warning">
+        <div class="text_warning">
+            <h1>WARNING</h1>
+            <p>You are using a portrait-viewport(mobile,tablet) device.This website is in development phase and currently does not support any type of mobile screens.
+                For the best possible experience, please either switch to landscape mode and use a attached keyboard and mouse.
+            </p>
+        </div>
+    </div>
     <div class="loader">
-        <h3>Loading</h3>
+        <img src="./assets/loading.gif" class="loading_image" alt="loading image">
+        <h3 class="text_loading">
+            <span>L</span>
+            <span>O</span>
+            <span>A</span>
+            <span>D</span>
+            <span>I</span>
+            <span>N</span>
+            <span>G</span>
+        </h3>
     </div>
     <div class="preloader">
         <img src="./assets/Interface_background-min.png" alt="">
         <img src="./assets/Designer_background-min.png" alt="">
         <img src="./assets/Developer_background-min.png" alt="">
+
+        <img src="./assets/menu_item__1.PNG" alt="">
+        <img src="./assets/menu_item_2.jpg" alt="">
+        <img src="./assets/menu_item_3.jpg" alt="">
+        <img src="./assets/menu_item_4.jpg" alt="">
     </div>
     <div class="cursor"></div>
     <div class="cursor_on_design"></div>
@@ -237,7 +261,7 @@
             <div class="slide slide_5">
                 <div class="cta_section">
                     <h1>Let's Create Something Great Together.</h1>
-                    <button>Start Now</button>
+                    <button class="animate_cta">Start Now</button>
                     <div class="cta_background"></div>
                 </div>
                 <footer>

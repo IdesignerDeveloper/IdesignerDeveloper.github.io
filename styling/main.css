@@ -70,6 +70,41 @@
   }
 }
 
+.mobile_warning {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  display: none;
+}
+
+.mobile_warning .text_warning {
+  position: absolute;
+  width: 70%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.mobile_warning .text_warning h1 {
+  font-weight: 300;
+  color: crimson;
+}
+
+.mobile_warning .text_warning p {
+  font-weight: 300;
+}
+
+@media screen and (orientation: portrait) {
+  .mobile_warning {
+    display: block;
+  }
+  .loader {
+    display: none;
+  }
+}
+
 .loader {
   position: relative;
   height: 100vh;
@@ -79,14 +114,91 @@
   transition: all 0.5s ease-out;
 }
 
-.loader h3 {
-  font-size: 2rem;
+.loader .loading_image {
   position: absolute;
-  right: 0px;
+  top: 71%;
+  left: 50%;
+  height: 18vh;
+  width: 34vh;
+  margin: -9vh 0px 0px -17vh;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.loader h3 {
+  font-size: 1.6rem;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   bottom: 0px;
-  margin: 10vh;
-  color: gold;
-  font-weight: 200;
+  margin: 10vh 10vh 10vh 0px;
+  font-weight: 300;
+}
+
+.loader h3 span {
+  -webkit-animation: load_text 0.5s linear infinite;
+          animation: load_text 0.5s linear infinite;
+  -webkit-animation-delay: 25ms;
+          animation-delay: 25ms;
+}
+
+.loader h3 span:nth-child(2) {
+  -webkit-animation-delay: 50ms;
+          animation-delay: 50ms;
+}
+
+.loader h3 span:nth-child(3) {
+  -webkit-animation-delay: 75ms;
+          animation-delay: 75ms;
+}
+
+.loader h3 span:nth-child(4) {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+
+.loader h3 span:nth-child(5) {
+  -webkit-animation-delay: 125ms;
+          animation-delay: 125ms;
+}
+
+.loader h3 span:nth-child(6) {
+  -webkit-animation-delay: 150ms;
+          animation-delay: 150ms;
+}
+
+.loader h3 span:nth-child(7) {
+  -webkit-animation-delay: 175ms;
+          animation-delay: 175ms;
+}
+
+@-webkit-keyframes load_text {
+  0% {
+    color: white;
+  }
+  50% {
+    color: black;
+  }
+  100% {
+    color: white;
+  }
+}
+
+@keyframes load_text {
+  0% {
+    color: white;
+  }
+  50% {
+    color: black;
+  }
+  100% {
+    color: white;
+  }
 }
 
 .preloader {
@@ -805,14 +917,52 @@ header button:hover {
 .slide_5 .cta_section .cta_background {
   position: absolute;
   height: 35vh;
-  width: 55vh;
+  width: 0vh;
   margin: -25vh 0px 0px 30vh;
-  opacity: 0.5;
+  opacity: 0.9;
   z-index: -1;
-  background-image: url(../../assets/Together.png);
+  background-image: none;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  -webkit-animation: background_image 1s linear infinite;
+          animation: background_image 1s linear infinite;
+}
+
+@-webkit-keyframes background_image {
+  0% {
+    background-image: url(../../assets/Together.png);
+  }
+  25% {
+    background-image: url(../../assets/project-1.jpg);
+  }
+  50% {
+    background-image: url(../../assets/design-1.png);
+  }
+  75% {
+    background-image: url(../../assets/design-2.jpg);
+  }
+  100% {
+    background-image: url(../../assets/Together.png);
+  }
+}
+
+@keyframes background_image {
+  0% {
+    background-image: url(../../assets/Together.png);
+  }
+  25% {
+    background-image: url(../../assets/project-1.jpg);
+  }
+  50% {
+    background-image: url(../../assets/design-1.png);
+  }
+  75% {
+    background-image: url(../../assets/design-2.jpg);
+  }
+  100% {
+    background-image: url(../../assets/Together.png);
+  }
 }
 
 .slide_5 footer {

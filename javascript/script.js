@@ -1,13 +1,14 @@
+console.clear();
 import { cursor } from '../javascript/cursor.js';
 import { hero } from '../javascript/hero_section.js';
-import { menu_function } from '../javascript/menu.js'
-import { remove_loader } from '../javascript/remove_loader.js'
+import { menu_function } from '../javascript/menu.js';
+import { cta_hover } from '../javascript/cta_hover.js';
 
 menu_function();
 cursor();
 menu_function();
 hero();
-remove_loader();
+cta_hover();
 
 document.getElementById("menu_switch").addEventListener("click",function(){
     document.getElementsByClassName("menu")[0].classList.toggle("menu_active")

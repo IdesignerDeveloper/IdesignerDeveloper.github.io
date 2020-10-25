@@ -1,17 +1,90 @@
+.mobile_warning{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: none;
+    .text_warning{
+        position: absolute;
+        width: 70%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        h1{
+            font-weight: 300;
+            color: crimson;
+        }
+        p{
+            font-weight: 300;
+        }
+    }
+}
+@media screen and (orientation: portrait){
+    .mobile_warning{
+        display: block;
+    }
+    .loader{
+        display: none;
+    }
+}
 .loader{
     position: relative;
     height: 100vh;
     width: 100vw;
     background-color: black;
     transition: all 0.5s ease-out;
-    h3{
-        font-size: 2rem;
+    .loading_image{
         position: absolute;
-        right: 0px;
+        top: 71%;
+        left: 50%;
+        height: 18vh;
+        width: 34vh;
+        margin: -9vh 0px 0px -17vh;
+        user-select: none;
+        pointer-events: none;
+        opacity: 0.7;
+    }
+    h3{
+        font-size: 1.6rem;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
         bottom: 0px;
-        margin: 10vh;
-        color: gold;
-        font-weight: 200;
+        margin: 10vh 10vh 10vh 0px;
+        font-weight: 300;
+        span{
+            animation: load_text 0.5s linear infinite;
+            animation-delay: 25ms;
+        }
+        span:nth-child(2){
+            animation-delay: 50ms;
+        }
+        span:nth-child(3){
+            animation-delay: 75ms;
+        }
+        span:nth-child(4){
+            animation-delay: 100ms;
+        }
+        span:nth-child(5){
+            animation-delay: 125ms;
+        }
+        span:nth-child(6){
+            animation-delay: 150ms;
+        }
+        span:nth-child(7){
+            animation-delay: 175ms;
+        }
+        @keyframes load_text{
+            0%{
+                color: white;
+            }
+            50%{
+                color: black;
+            }
+            100%{
+                color: white;
+            }
+        }
     }
 }
 .preloader{

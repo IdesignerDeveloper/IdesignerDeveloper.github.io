@@ -22,14 +22,32 @@
         .cta_background{
             position: absolute;
             height: 35vh;
-            width: 55vh;
+            width: 0vh;
             margin: -25vh 0px 0px 30vh;
-            opacity: 0.5;
+            opacity: 0.9;
             z-index: -1;
-            background-image: url(../../assets/Together.png);
+            background-image: none;
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
+            animation: background_image 1s linear infinite;
+        }
+        @keyframes background_image{
+            0%{
+                background-image: url(../../assets/Together.png);
+            }
+            25%{
+                background-image: url(../../assets/project-1.jpg);
+            }
+            50%{
+                background-image: url(../../assets/design-1.png);
+            }
+            75%{
+                background-image: url(../../assets/design-2.jpg);
+            }
+            100%{
+                background-image: url(../../assets/Together.png);
+            }
         }
     }
     footer{
