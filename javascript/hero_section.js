@@ -7,10 +7,10 @@ export var hero = function(){
                 document.body.style.backgroundImage = "url(./assets/Interface_background-min.png)";
             }
             if(i==1){
-                document.body.style.backgroundImage = "url(./assets/Designer_background-min.png)";
+                document.body.style.backgroundImage = "url(./assets/designer1.jpg)";
             }
             if(i==2){
-                document.body.style.backgroundImage = "url(./assets/Developer_background-min.png)";
+                document.body.style.backgroundImage = "url(./assets/Developer_background-min.jpg)";
             }
         });
         document.getElementsByClassName("line_a")[i].addEventListener("mouseout",function(){

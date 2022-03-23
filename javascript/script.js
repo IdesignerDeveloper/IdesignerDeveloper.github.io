@@ -5,10 +5,15 @@ import { menu_function } from '../javascript/menu.js';
 import { cta_hover } from '../javascript/cta_hover.js';
 
 menu_function();
+console.log("pass 1")
 cursor();
+console.log("pass 2")
 menu_function();
+console.log("pass 3")
 hero();
+console.log("pass 4")
 cta_hover();
+console.log("pass 5")
 
 document.getElementById("menu_switch").addEventListener("click",function(){
     document.getElementsByClassName("menu")[0].classList.toggle("menu_active")

@@ -6,7 +6,7 @@
         .works_container{
             position: relative;
             z-index: 5;
-            height: 45vh;
+            height: 35vh;
             width: 20vw;
             background-color: black;
             .w_c{
@@ -17,13 +17,13 @@
                         font-size: 1.3rem;
                     }
                     span:nth-child(2){
-                        font-size: 4.5rem;
+                        font-size: 3.5rem;
                     }
                 }
             }
         }
         .designs{
-            margin-right: 10vh;
+            margin: 20px 0vh 10px 10px;
             height: 100%;
             width: 90vw;
             top: 00vh;
@@ -31,9 +31,10 @@
             position: absolute;
             right: 0px;
             display: grid;
-            grid-template-rows: auto auto;
-            grid-template-columns: 30vw 30vw 30vw;
+            grid-template-rows: 35vh 35vh;
+            grid-template-columns: 20vw 20vw 20vw 20vw;
             .design{
+                margin-top: 30vh;
                 position: relative;
                 z-index: 15;
                 display: flex;
@@ -43,16 +44,16 @@
                 //user-select: none;
                 //pointer-events: none;
                 .main_char{
-                    font-size: 4rem;
+                    font-size: 3rem;
                 }
                 .background_ring{
                     position: absolute;
                     top: 50%;
                     left: 50%;
                     //transform: translate(-50%,-50%);
-                    height: 20vh;
-                    width: 20vh;
-                    margin: -10vh 0px 0px -10vh;
+                    height: 14vh;
+                    width: 14vh;
+                    margin: -7vh 0px 0px -7vh;
                     filter: invert(100%);
                     opacity: 0.35;
                     animation: rotate 10s linear infinite;

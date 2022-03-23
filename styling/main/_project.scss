@@ -1,70 +1,50 @@
 .projects{
+    position: relative;
+    margin: -45vh 0px 0px 20vw;
+    //Projects
     display: flex;
-    .project{
-        margin: -20vh 0px 0px 35vw;
-        position: relative;
-        height: 65vh;
-        width: 60vw;
-        .number{
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            font-size: 11rem;
-            font-weight: 300;
-            color: rgb(255, 255, 255);
-            z-index: 5;
-            transition: all 0.5s;
-        }
-        .main_project_image{
-            position: absolute;
-            height: auto;
-            width: 45vw;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-            z-index: 1;
+    // justify-content: center;
+    align-items: center;
+    height: 100vh;
 
-            transition: all 0.5s ease-in-out;
-            //transition-delay: 0.25s;
+
+
+//     <div class="project">
+//     <img src="./assets/project-1.jpg" alt="" class="main_project_image">
+//     <div class="project_desc">
+//         <h1>YouStream</h1>
+//         <ul>
+//             <li>Branding</li>
+//             <li>Design</li>
+//             <li>Prototyping</li>
+//             <li>Development</li>
+//         </ul>
+//     </div>
+// </div>
+
+
+
+    .project{
+        margin: 25vh 10vh 0px 10vh;
+        .main_project_image{
+            height: 30vh;
         }
         .project_desc{
-            position: absolute;
-            bottom: 0px;
-            right: 0px;
-            z-index: 5;
-            height: 45vh;
-            width: 30vh;
-            padding: 4vh 0px 0px 6vh;
-            transition: all 0.5s;
             h1{
-                margin: -2vh 0px 3vh -2vh;
-                font-size: 5rem;
-                font-weight: 300;
-                transition: all 0.5s;
+                margin-top: 1rem;
+                font-weight: 400;
             }
             ul{
+                margin-top: .65rem;
                 list-style-type: none;
-                font-weight: 200;
-                margin-left: 5vh;
+                display: flex;
                 li{
-                    font-size: 1rem;
-                    transition: all 0.5s;
+                    margin-right: 2rem;
                 }
             }
         }
     }
-    .project:hover{
-        .number{
-            transform: scale(1.1);
-        }
-        .main_project_image{
-            transform: translate(-50%,-50%) scale(1.05);
-        }
-        .project_desc{
-            transform: scale(1.1);
-            font-weight: 500;
-        }
-    }
+
 }
 
 

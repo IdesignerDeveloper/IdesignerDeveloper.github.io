@@ -62,6 +62,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            font-size: 5rem;
             img{
                 height: 50%;
             }
@@ -75,10 +76,10 @@
             box-sizing: border-box;
             .row{
                 position: relative;
-                margin-top: 10vh;
+                margin-top: 3vh;
                 display: flex;
                 .value{
-                    font-size: .75rem;
+                    font-size: 1.15rem;
                     color: cornsilk;
                     position: absolute;
                     top: 50%;
@@ -89,9 +90,9 @@
             .row_l{
                 position: relative;
                 display: flex;
-                margin-top: 10vh;
+                margin-top: 3vh;
                 .value{
-                    font-size: .75rem;
+                    font-size: 1.15rem;
                     color: cornsilk;
                     position: absolute;
                     top: 50%;
@@ -99,11 +100,9 @@
                     margin-left: 7vw;
                     ul{
                         list-style-type: none;
+                        display: flex;
                         li{
-                            margin-top: .75rem;
-                        }
-                        li:first-child{
-                            margin-top: 0px;
+                            margin-right: .75rem;
                         }
                     }
                 }
